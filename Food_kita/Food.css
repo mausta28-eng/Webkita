@@ -294,7 +294,7 @@ nav a:hover {
 }
 
 
-//* =========================
+/* =========================
    MENU
 ========================= */
 
@@ -732,6 +732,60 @@ footer {
 
     footer {
         font-size: 12px;
+    }
+
+}
+/* =========================
+   HAMBURGER MENU
+========================= */
+
+.hamburger {
+    display: none;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 5px 10px;
+    position: relative;
+    z-index: 2000;
+}
+
+
+/* =========================
+   HAMBURGER UNTUK HP
+========================= */
+
+@media (max-width: 600px) {
+
+    header {
+        position: relative;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #111;
+        flex-direction: column;
+        padding: 15px 0;
+        z-index: 1000;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+        padding: 14px 20px;
     }
 
 }
