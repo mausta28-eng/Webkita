@@ -11,6 +11,8 @@ body {
     line-height: 1.6;
 }
 
+/* ================= HEADER ================= */
+
 header {
     background: #111827;
     color: white;
@@ -31,6 +33,8 @@ nav a {
     margin-left: 20px;
 }
 
+/* ================= HERO ================= */
+
 .hero {
     text-align: center;
     padding: 100px 20px;
@@ -48,6 +52,8 @@ nav a {
     margin-bottom: 30px;
 }
 
+/* ================= BUTTON ================= */
+
 .btn {
     display: inline-block;
     background: white;
@@ -58,6 +64,8 @@ nav a {
     font-weight: bold;
 }
 
+/* ================= SECTION ================= */
+
 section {
     padding: 70px 8%;
 }
@@ -66,6 +74,8 @@ section {
     text-align: center;
     margin-bottom: 40px;
 }
+
+/* ================= SERVICES ================= */
 
 .services {
     display: grid;
@@ -78,12 +88,14 @@ section {
     padding: 25px;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
 
 .card h3 {
     margin-bottom: 10px;
 }
+
+/* ================= PRICING ================= */
 
 .pricing {
     display: grid;
@@ -96,7 +108,7 @@ section {
     padding: 30px;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
 
 .price {
@@ -105,6 +117,8 @@ section {
     color: #2563eb;
     margin: 20px 0;
 }
+
+/* ================= CONTACT ================= */
 
 .contact {
     text-align: center;
@@ -123,6 +137,8 @@ section {
     font-weight: bold;
 }
 
+/* ================= FOOTER ================= */
+
 footer {
     text-align: center;
     padding: 20px;
@@ -130,15 +146,55 @@ footer {
     color: white;
 }
 
+/* ================= HAMBURGER ================= */
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 5px 10px;
+    z-index: 9999;
+}
+
+/* ================= TAMPILAN HP ================= */
+
 @media (max-width: 768px) {
 
     header {
-        flex-direction: column;
-        gap: 15px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #111827;
+        padding: 15px 0;
+        text-align: center;
+        z-index: 9998;
+    }
+
+    nav.active {
+        display: block;
     }
 
     nav a {
-        margin: 0 8px;
+        display: block;
+        margin: 12px 0;
     }
 
     .hero h1 {
@@ -146,7 +202,7 @@ footer {
     }
 
     .services {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .pricing {

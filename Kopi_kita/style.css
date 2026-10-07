@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f5f0;
+    color: #2b1d16;
+    line-height: 1.6;
+}
+
+
+/* NAVBAR */
+
+header {
+    background: #2b1d16;
+    color: white;
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background:
+        linear-gradient(
+            rgba(43, 29, 22, 0.75),
+            rgba(43, 29, 22, 0.75)
+        ),
+        linear-gradient(135deg, #6f4e37, #c49a6c);
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.subtitle {
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+
+    background: #c49a6c;
+    color: white;
+
+    padding: 13px 28px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+
+/* SECTION */
+
+section {
+    padding: 80px 8%;
+}
+
+.section-title {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+
+/* MENU */
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.menu-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+}
+
+.menu-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.menu-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.menu-card p {
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.menu-card strong {
+    color: #8b5e3c;
+    font-size: 20px;
+}
+
+
+/* ABOUT */
+
+.about {
+    background: #eee5da;
+}
+
+.about .section-title {
+    max-width: 800px;
+}
+
+
+/* CONTACT */
+
+.contact {
+    text-align: center;
+
+    background: #2b1d16;
+
+    color: white;
+}
+
+.contact h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    margin-bottom: 25px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #1d130f;
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* RESPONSIVE HP */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 18px 5%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 80vh;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    section {
+        padding: 60px 5%;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact h2 {
+        font-size: 30px;
+    }
+
+}
