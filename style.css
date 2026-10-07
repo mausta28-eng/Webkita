@@ -159,7 +159,9 @@ footer {
     z-index: 9999;
 }
 
-/* ================= TAMPILAN HP ================= */
+/* =========================
+   TAMPILAN HP
+========================= */
 
 @media (max-width: 768px) {
 
@@ -174,6 +176,13 @@ footer {
     .menu-toggle {
         display: block;
         margin-left: auto;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 28px;
+        cursor: pointer;
+        padding: 5px 10px;
+        z-index: 10000;
     }
 
     nav {
@@ -208,4 +217,14 @@ footer {
     .pricing {
         grid-template-columns: 1fr;
     }
+
 }
+    .portfolio-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .portfolio-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
