@@ -64,6 +64,16 @@ nav a {
     font-weight: bold;
 }
 
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #2563eb;
+    color: white;
+    transform: scale(1.05);
+}
+
 /* ================= SECTION ================= */
 
 section {
@@ -79,8 +89,8 @@ section {
 
 .services {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
 .card {
@@ -89,6 +99,15 @@ section {
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(37, 99, 235, 0.20);
 }
 
 .card h3 {
