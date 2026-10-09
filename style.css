@@ -258,6 +258,46 @@ section {
     margin-bottom: 10px;
 }
 
+/* ================= SERVICE CARD ================= */
+
+.service-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.service-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eff6ff;
+    border-radius: 18px;
+    font-size: 32px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: #6b7280;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.service-label {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #dbeafe;
+    color: #2563eb;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
 /* ================= PRICING ================= */
 
 .pricing {
@@ -279,6 +319,54 @@ section {
     font-weight: bold;
     color: #2563eb;
     margin: 20px 0;
+}
+
+/* ================= PRICE CARD TAMBAHAN ================= */
+
+.price-card {
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.15);
+}
+
+.price-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.price-card p {
+    color: #6b7280;
+    font-size: 15px;
+    margin: 8px 0;
+}
+
+.price-card .btn {
+    background: #2563eb;
+    color: white;
+}
+
+.price-card .btn:hover {
+    background: #1d4ed8;
+    color: white;
+}
+
+/* Paket Standard */
+.price-card.popular {
+    position: relative;
+    border: 2px solid #2563eb;
+    transform: scale(1.04);
+}
+
+.price-card.popular:hover {
+    transform: scale(1.04) translateY(-8px);
+}
+
+.popular-badge {
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.25);
 }
 
 /* ================= CONTACT ================= */
@@ -512,4 +600,159 @@ footer {
     font-size: 12px;
     font-weight: bold;
     white-space: nowrap;
+}
+
+
+/* ================= PORTOFOLIO WEBKITA ================= */
+
+.portfolio-badge {
+    display: inline-block;
+    padding: 7px 15px;
+    margin-bottom: 12px;
+    background: #dbeafe;
+    color: #2563eb;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.portfolio-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+}
+
+.portfolio-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+    padding: 30px 24px;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+}
+
+.portfolio-icon {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 22px;
+    font-size: 42px;
+}
+
+.coffee-icon {
+    background: #fef3c7;
+}
+
+.bengkel-icon {
+    background: #dbeafe;
+}
+
+.food-icon {
+    background: #ffedd5;
+}
+
+.portfolio-category {
+    color: #2563eb;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.portfolio-card h3 {
+    margin-bottom: 12px;
+}
+
+.portfolio-card p {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 24px;
+    flex-grow: 1;
+}
+
+.portfolio-btn {
+    background: #2563eb;
+    color: white;
+    margin-top: auto;
+}
+
+.portfolio-btn:hover {
+    background: #1d4ed8;
+    color: white;
+}
+
+/* RESPONSIVE PORTOFOLIO */
+
+@media (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-card {
+        width: 100%;
+    }
+}
+
+
+/* ================= KEUNGGULAN WEBKITA ================= */
+
+.advantage-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: stretch;
+}
+
+.advantage-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+    padding: 28px 20px;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+}
+
+.advantage-icon {
+    width: 68px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eff6ff;
+    border-radius: 20px;
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.advantage-card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.advantage-card p {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 18px;
+    flex-grow: 1;
+}
+
+.advantage-label {
+    display: inline-block;
+    padding: 6px 10px;
+    background: #dbeafe;
+    color: #2563eb;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* RESPONSIVE KEUNGGULAN */
+
+@media (max-width: 768px) {
+    .advantage-grid {
+        grid-template-columns: 1fr;
+    }
 }

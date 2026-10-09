@@ -1,4 +1,5 @@
 console.log("SCRIPT FOOD KITA BERHASIL");
+
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("nav-menu");
 
